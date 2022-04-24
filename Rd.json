@@ -1,0 +1,42 @@
+{
+  "AWSTemplateFormatVersion": "2010-09-09",
+  "Metadata": {
+    "AWS::CloudFormation::Designer": {
+      "a70a526d-4aab-4229-847c-4cff2d1f7484": {
+        "size": {
+          "width": 60,
+          "height": 60
+        },
+        "position": {
+          "x": 359,
+          "y": 123
+        },
+        "z": 0
+      }
+    }
+  },
+  "Resources": {
+    "RDSDBI5A2OR": {
+      "Type": "AWS::RDS::DBInstance",
+      "Properties": {
+        "DBName": "myDB",
+        "Engine": "MySQL",
+        "DBInstanceClass": "db.t2.small",
+        "AllocatedStorage": "8",
+        "MasterUsername": "MyName",
+        "MasterUserPassword": "MyPassword",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "MySQLDatabase"
+          }
+        ]
+      },
+      "Metadata": {
+        "AWS::CloudFormation::Designer": {
+          "id": "a70a526d-4aab-4229-847c-4cff2d1f7484"
+        }
+      }
+    }
+  }
+}
